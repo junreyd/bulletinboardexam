@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="ui two column centered grid">
+        <div class="column">
+            <br>
+            <br>
+            <div class="ui message">
+                <div class="header">
+                    Simple Bulletin Board
+                </div>
+            <button class="ui green button" style="float: right; margin-bottom: 10px;" onclick="add(); return false;">Create New Article</button>
+
+                <table class="ui celled table">
+                    <thead>
+                      <tr>
+                        <th>Article Title</th>
+                        <th>Article Content Snippet</th>
+                        <th>Created Date</th>
+                        <th colspan="2">Actions</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Name">James</td>
+                        <td data-label="Age">24</td>
+                        <td data-label="Job">Engineer</td>
+                        <td>
+                            <button class="ui primary button">
+                                Edit
+                              </button>
+                              <button class="ui button">
+                                Delete
+                              </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!-- add -->
+                  <div class="ui modal add">
+                    <div class="header">
+                      Add Article
+                    </div>
+                    <form class="ui form" style="margin: 24px;">
+                        <div class="field">
+                          <label>Article Title</label>
+                          <input type="text" name="first-name" placeholder="Article Title">
+                        </div>
+                        <div class="field">
+                          <label>Article Content Snippet</label>
+                          <input type="text" name="last-name" placeholder="Article Content Snippet">
+                        </div>
+                      </form>
+                    <div class="actions">
+                      <div class="ui black deny button">
+                        Cancel
+                      </div>
+                      <div class="ui positive right labeled icon button">
+                        Submit
+                        <i class="checkmark icon"></i>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          
+        </div>
+      </div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+</html>
