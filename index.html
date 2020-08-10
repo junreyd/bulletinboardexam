@@ -17,7 +17,7 @@
                 </div>
             <button class="ui green button" style="float: right; margin-bottom: 10px;" onclick="add(); return false;">Create New Article</button>
 
-                <table class="ui celled table">
+                <table class="ui celled table" id="displayarticle">
                     <thead>
                       <tr>
                         <th>Article Title</th>
@@ -27,7 +27,7 @@
                     </tr>
                 </thead>
                     <tbody>
-                      <tr>
+                      <!-- <tr>
                         <td data-label="Name">James</td>
                         <td data-label="Age">24</td>
                         <td data-label="Job">Engineer</td>
@@ -39,7 +39,7 @@
                                 Delete
                               </button>
                         </td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
 
@@ -51,19 +51,46 @@
                     <form class="ui form" style="margin: 24px;">
                         <div class="field">
                           <label>Article Title</label>
-                          <input type="text" name="first-name" placeholder="Article Title">
+                          <input type="text" id="arttitle" placeholder="Article Title">
                         </div>
                         <div class="field">
                           <label>Article Content Snippet</label>
-                          <input type="text" name="last-name" placeholder="Article Content Snippet">
+                          <input type="text" id="artcontent" placeholder="Article Content Snippet">
                         </div>
                       </form>
                     <div class="actions">
                       <div class="ui black deny button">
                         Cancel
                       </div>
-                      <div class="ui positive right labeled icon button">
+                      <div class="ui positive right labeled icon button" id="submitadd">
                         Submit
+                        <i class="checkmark icon"></i>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- update -->
+                   <div class="ui modal update">
+                    <div class="header">
+                      Update Article
+                    </div>
+                    <form class="ui form" style="margin: 24px;">
+                        <div class="field">
+                          <label>Article Title</label>
+                          <input type="text" id="arttitle_update" placeholder="Article Title">
+                        </div>
+                        <div class="field">
+                          <label>Article Content Snippet</label>
+                          <input type="text" id="artcontent_update" placeholder="Article Content Snippet">
+                        </div>
+                      </form>
+                    <div class="actions">
+                      <div class="ui black deny button">
+                        Cancel
+                      </div>
+                      <div class="ui positive right labeled icon button" id="submitupdate">
+                        Update
                         <i class="checkmark icon"></i>
                       </div>
                     </div>
